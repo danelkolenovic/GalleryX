@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1005;
+}
+:root{
+    --hd-ftr-bg:#27374D;
+    --tekst:#868686;
+    --tekst-2:#2C2C2C;
+    --boddy-bg:#F8F1E9;
+    --headings:#8A1538;
+    --details-gold:#D4A373;
+    --details-green:#6A8455;
+}
+body{
+    background-color: var(--boddy-bg);
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--hd-ftr-bg);
+    color: var(--tekst);
+    height: 10vh;
+    gap: 850px;
+}
+header p{
+    font-size: 3rem;
+    font-style: italic;
+   
+}
+header select{
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid var(--tekst);
+    color: var(--tekst);
+    font-size: 1.3rem;
+}
+header i{
+    font-size: 1.5rem;
+    color: var(--tekst);
+    gap: 5px;
+}
+header i:hover{
+  scale: 1.1;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh; 
+}
+nav a{
+    text-decoration: none;
+    color: var(--tekst-2);
+    font-size: 1.2rem;
+}
+nav .links{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+nav a:hover{
+    color: var(--tekst);
+    scale: 1.1;
+}
+main {
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/website/images/pozadina2.avif) ;
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center  ;
+   height: 90vh;
+   
+
+}
+main .tekst{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 180px;
+    color: var(--headings);
+}
+main .tekst h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: italic;
+}
+main .tekst p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 10px 0;
+}
+button{
+    padding: 20px 45px;
+    border-radius: 20px;
+    background-color: var(--details-green);
+    color: var(--details-gold);
+    border: none;
+    font-size: 1.2rem;
+}
+button:hover{
+    background-color: var(--details-gold);
+    color: var(--details-green);
+}
+article {
+    position: relative;
+}
+.slider {
+    position: absolute;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    right:-100px;
+    top: 100px;
+
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    display: block;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 190px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--headings);
+}
+article h1{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    color: var(--headings);
+}
+.collection  {
+    width: 60%;
+    padding: 20px 30px 40px 60px;
+    font-size: 1.4rem;
+}
+.collection button{
+
+    margin-top: 20px;
+   margin-left: 280px;
+}
+.collection p mark{
+    font-size: 3rem;
+    background-color: transparent;
+    color: var(--headings);
+}
+.title{
+    display: flex;    
+    align-items: center; 
+    font-size: 4rem;
+    color: var(--headings);
+    text-align: center;}
+    
+    .title::before,
+    .title::after{
+        content: "";
+        flex: 1;
+        border-top: 2px solid var(--headings);
+        width: 100px;
+        margin: 0 10px;
+    }
+    section {
+        height: 90vh;
+        background-image: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), 
+        url(/website/images/bg.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 50px 50px;
+    }
+    section .text{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 200px;
+        color: var(--tekst);    
+    }
+    section  mark{
+        color: var(--headings);
+        background-color: transparent;
+        font-style: italic;
+    }
+    section .text h1{
+        font-size: 3rem;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    section .text p{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    .contact h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .kontakt {
+        background:var(--headings);
+        margin: 80px 30px;
+        padding: 80px 30px;
+        font-size: 1.5rem;
+        color: var(--tekst);
+        border-radius: 20px;
+    }
+    .kontakt button{
+        margin: 30px 630px 0;
+    }
+
+    footer{
+        background-color: var(--hd-ftr-bg);
+        color: var(--tekst);
+        display: flex;
+        justify-content: center;
+        gap: 300px;
+        align-items: center;
+        height: 35vh;
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--tekst);
+    }
+    footer .logo{
+        font-size: 3rem;
+        font-style: italic;
+    }
+    footer .aplikacije{
+        gap: 30px;
+        font-size: 3rem;
+    }
+    footer .navigacija{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size:1.5rem ;
+    }
+    footer a:hover,
+    footer i:hover{
+        scale: 1.1; 
+    }
+
+
+    @media (max-width:768px) {
+        header{
+            flex-direction: column;
+            gap: 10px;
+            height: 15vh;
+        }
+        nav{
+            height: 20vh;
+        }
+        nav .links{
+            flex-direction: column;
+            gap: 7px;
+            text-align: center;
+        }
+        main .tekst{
+            padding: 150px;
+        }
+        main p {
+            font-weight: bolder;
+        }
+        .collection{
+            width: 100%;
+            padding: 10px 400px 0 20px;
+         
+        }
+        article h1{
+            margin: 50px 0 0px;
+        }
+        
+        .slider{
+            top: 180px;
+            right: -250px;
+        }
+        .slider img{
+            max-width: 300px;
+        }
+        .dots{
+            margin-right: 300px;
+        }
+        section .text{
+            padding: 150px 120px;
+        }
+        .kontakt button{
+            margin: 40px 250px 0;
+        }
+
+        footer{
+            gap: 50px;
+        }
+        
+    }
+
+    @media (max-width:526px) {
+        nav .links{
+            margin-top: 20px;
+        }
+        main{
+            background-size: 600px 600px;
+        }
+        main .tekst{
+            padding: 100px;
+        }
+        
+        .collection{
+            padding: 20px;
+            
+        }
+        .collection p{
+            margin-bottom: 400px;
+            font-size: 1.2rem;
+        }
+        .slider{
+            top: 420px;
+            right: -180px;
+            
+        }
+        .collection button{
+            margin-top: 40px;
+            margin-left: 180px;
+        }
+        section{
+            margin: 20px;
+        }
+        section .text{
+            padding: 100px 70px;
+        }
+        section .text h1{
+            text-align: center;
+        }
+        .kontakt button{
+            margin: 40px 120px 0;
+        }
+        footer{
+            height: 60vh    ;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    

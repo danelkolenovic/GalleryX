@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1005;
+}
+:root{
+    --hd-ftr-bg:#27374D;
+    --tekst:#868686;
+    --tekst-2:#2C2C2C;
+    --boddy-bg:#F8F1E9;
+    --headings:#8A1538;
+    --details-gold:#D4A373;
+    --details-green:#6A8455;
+}
+body{
+    background-color: var(--boddy-bg);
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--hd-ftr-bg);
+    color: var(--tekst);
+    height: 10vh;
+    gap: 850px;
+}
+header p{
+    font-size: 3rem;
+    font-style: italic;
+   
+}
+header select{
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid var(--tekst);
+    color: var(--tekst);
+    font-size: 1.3rem;
+}
+header i{
+    font-size: 1.5rem;
+    color: var(--tekst);
+    gap: 5px;
+}
+header i:hover{
+  scale: 1.1;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh; 
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+nav a{
+    text-decoration: none;
+    color: var(--tekst-2);
+    font-size: 1.2rem;
+}
+nav .links{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+nav a:hover{
+    color: var(--tekst);
+    scale: 1.1;
+}
+.prvi h1,
+.drugi h1,
+.treci h1,
+.cetvrti h1,
+.peti h1,
+.sesti h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 30px 50px; 
+    color: var(--headings);
+    font-size: 2.5rem;
+    font-style: italic;
+}
+.slike1{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 60px;
+}
+
+.slike21{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 100px;
+}
+.slike22{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 100px;
+}
+.slike23{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 100px;
+}
+
+.slike3{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 60px;
+}
+
+.flexane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.gridovane{
+    display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 20px;
+   margin: 20px 0;
+}
+.flex2{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 60px; 
+}
+.zadnja{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.slike51{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    gap: 60px; 
+}
+.slike52{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 60px;
+}
+.slike6{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 60px;
+}
+.title{
+    display: flex;    
+    align-items: center; 
+    font-size: 4rem;
+    color: var(--headings);
+    text-align: center;}
+    
+    .title::before,
+    .title::after{
+        content: "";
+        flex: 1;
+        border-top: 2px solid var(--headings);
+        width: 100px;
+        margin: 0 10px;
+    }
+
+
+
+
+
+
+
+footer{
+    background-color: var(--hd-ftr-bg);
+    color: var(--tekst);
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    height: 35vh;
+}
+footer a{
+    text-decoration: none;
+    color: var(--tekst);
+}
+footer .logo{
+    font-size: 3rem;
+    font-style: italic;
+}
+footer .aplikacije{
+    gap: 30px;
+    font-size: 3rem;
+}
+footer .navigacija{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size:1.5rem ;
+}
+footer a:hover,
+footer i:hover{
+    scale: 1.1; 
+}
+
+
+@media (max-width:768px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+        height: 15vh;
+    }
+    nav{
+        height: 20vh;
+    }
+    nav .links{
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+    }
+.slike1{
+    gap: 10px;
+}
+.slike1 img{
+    width: 240px;
+    height: 300px;
+}
+.drugi img{
+    width: 250px;
+    height: 200px;
+  
+}
+
+.slike21,
+.slike22,
+.slike23{
+    gap: 10px;
+}
+.slike3{
+    gap: 10px;
+}
+.slike3 img{
+    width: 240px;
+    height: 300px;
+}
+.slike4{
+    gap: 20px;
+}
+.flexane{
+    flex-direction: column;
+}
+.slike52{
+    gap: 10px;
+}
+.slike52 img{
+    width: 230px;
+    height: 300px;
+}
+.slike6{
+    gap: 10px;
+    position: relative;
+    height: 100vh;
+}
+.slike6 img{
+    width: 230px;
+    height: 300px;
+}
+#grad{
+    position: absolute;
+    bottom: 100px;
+    width: 480px;
+    
+}
+
+
+    footer{
+        gap: 50px;
+    }
+    
+}
+
+
+
+@media (max-width:526px) {
+    nav .links{
+        margin-top: 20px;
+    }
+
+    .slike1{
+        gap: 10px;
+        flex-direction: column;
+        margin-left:90px ;
+    }
+    .slike1 img{
+        width: 340px;
+        height: 400px;
+    }
+    .drugi img{
+        width: 250px;
+        height: 200px;
+      
+    }
+    .slike22 img{
+        width: 170px;
+    }
+    
+    .slike21,
+    .slike22,
+    .slike23{
+        gap: 5px;
+    }
+    .slike3{
+        gap: 5px;
+    }
+    .slike3 img{
+        width: 180px;
+        height: 200px;
+    }
+    .slike4{
+        gap: 20px;
+    }
+    .flexane{
+        flex-direction: column;
+    }
+    .flex2 img{
+        width: 200px;
+        height: 300px;
+    }
+    .zadnja img{
+        width: 500px;
+        height: 300px;
+    }
+    .slike51{
+        gap: 5px;
+    }
+    .slike51 img{
+        width: 250px;
+        height: 300px;
+    }
+    .slike52{
+        gap: 5px;
+    }
+    .slike52 img{
+        width: 170px;
+        height: 200px;
+    }
+    .slike6{
+        gap: 10px;
+        position: relative;
+        height: 100vh;
+    }
+    .slike6 img{
+        width: 230px;
+        height: 300px;
+    }
+    #grad{
+        position: absolute;
+        bottom: 100px;
+        width: 480px;
+        
+    }
+    
+
+
+
+
+
+    footer{
+        height: 60vh    ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

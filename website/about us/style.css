@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1005;
+}
+:root{
+    --hd-ftr-bg:#27374D;
+    --tekst:#868686;
+    --tekst-2:#2C2C2C;
+    --boddy-bg:#F8F1E9;
+    --headings:#8A1538;
+    --details-gold:#D4A373;
+    --details-green:#6A8455;
+}
+body{
+    background-color: var(--boddy-bg);
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--hd-ftr-bg);
+    color: var(--tekst);
+    height: 10vh;
+    gap: 850px;
+}
+header p{
+    font-size: 3rem;
+    font-style: italic;
+   
+}
+header select{
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid var(--tekst);
+    color: var(--tekst);
+    font-size: 1.3rem;
+}
+header i{
+    font-size: 1.5rem;
+    color: var(--tekst);
+    gap: 5px;
+}
+header i:hover{
+  scale: 1.1;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh; 
+}
+nav a{
+    text-decoration: none;
+    color: var(--tekst-2);
+    font-size: 1.2rem;
+}
+nav .links{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+nav a:hover{
+    color: var(--tekst);
+    scale: 1.1;
+}
+
+ .naslov{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    color: var(--tekst);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+    url(/website/images/aboutUs-bg.png);
+    background-position: center;
+    background-size: cover;
+    margin: 10px 50px;
+}
+.naslov h1{
+    margin: 10px;
+    font-size: 3rem;
+    font-style: italic;
+}
+.naslov p{
+    margin: 10px 150px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.content{
+    position: relative;
+    padding: 100px;
+    display: flex;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)), 
+    url(/website/images/content-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+
+    margin: 80px 50px;
+}
+.content a{
+    color: var(--headings);
+    background-color: transparent;
+    font-weight: bolder;
+    font-style: italic;
+}
+.content p{
+    font-size: 1.4rem;
+}
+.left,
+.right{
+    width:250px;
+    height: 400px;
+}
+.text {
+    margin: 0;
+    padding: 0 30px;
+    text-align: justify;
+    line-height: 1.6;
+}
+.naslov-slike{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.naslov-slike h1{
+    font-size: 3rem;
+    color: var(--headings);
+}
+.title{
+    display: flex;    
+    align-items: center; 
+    font-size: 4rem;
+    color: var(--headings);
+    text-align: center;}
+    
+    .title::before,
+    .title::after{
+        content: "";
+        flex: 1;
+        border-top: 2px solid var(--headings);
+        width: 100px;
+        margin: 0 10px;
+    }
+article{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.slides{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+.slides img{
+    box-shadow: 2px 2px 2px 2px var(--tekst);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--hd-ftr-bg);
+    color: var(--tekst);
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    height: 35vh;
+}
+footer a{
+    text-decoration: none;
+    color: var(--tekst);
+}
+footer .logo{
+    font-size: 3rem;
+    font-style: italic;
+}
+footer .aplikacije{
+    gap: 30px;
+    font-size: 3rem;
+}
+footer .navigacija{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size:1.5rem ;
+}
+footer a:hover,
+footer i:hover{
+    scale: 1.1; 
+}
+
+
+@media (max-width:768px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+        height: 15vh;
+    }
+    nav{
+        height: 20vh;
+    }
+    nav .links{
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+    }
+.naslov{
+    padding: 10px;
+}
+.naslov h1{
+    padding: 60px 60px 0 ;
+    margin: 0;
+}
+.naslov p{
+    padding: 40px 50px 20px 50px;
+    margin: 0;
+}
+.content{
+display: flex;
+flex-direction: column;}
+.content p{
+    font-size: 1rem;
+    margin: 20px 0;
+}
+.content img{
+   margin-left: 120px;
+}
+.slides{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+    footer{
+        gap: 50px;
+    }
+    
+}
+
+
+@media (max-width:526px) {
+    nav .links{
+        margin-top: 20px;
+    }
+    .naslov{
+        padding: 10px;
+        margin: 20px;
+    }
+    .naslov h1{
+        padding: 60px 60px 0 ;
+        margin: 0;
+        text-align: center;
+    }
+    .naslov p{
+        padding: 40px 50px 20px 50px;
+        margin: 0;
+    }
+    .content{
+    display: flex;
+    flex-direction: column;
+padding: 0 10px;}
+    .content p{
+        font-size: 0.8rem;
+        margin: 20px 0;
+        text-align: center;
+        
+        
+    }
+    .content img{
+       margin-left: 80px;
+    }
+    .slides{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+
+
+
+
+    
+    footer{
+        height: 60vh    ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

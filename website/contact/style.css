@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1005;
+}
+:root{
+    --hd-ftr-bg:#27374D;
+    --tekst:#868686;
+    --tekst-2:#2C2C2C;
+    --boddy-bg:#F8F1E9;
+    --headings:#8A1538;
+    --details-gold:#D4A373;
+    --details-green:#6A8455;
+}
+body{
+    background-color: var(--boddy-bg);
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--hd-ftr-bg);
+    color: var(--tekst);
+    height: 10vh;
+    gap: 850px;
+}
+header p{
+    font-size: 3rem;
+    font-style: italic;
+   
+}
+header select{
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid var(--tekst);
+    color: var(--tekst);
+    font-size: 1.3rem;
+}
+header i{
+    font-size: 1.5rem;
+    color: var(--tekst);
+    gap: 5px;
+}
+header i:hover{
+  scale: 1.1;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh; 
+}
+nav a{
+    text-decoration: none;
+    color: var(--tekst-2);
+    font-size: 1.2rem;
+}
+nav .links{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+nav a:hover{
+    color: var(--tekst);
+    scale: 1.1;
+}
+main {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/website/images/contact-bg.png);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+main h1{
+    color: var(--tekst);
+    font-size: 3rem;
+    font-weight: bolder;
+   display: flex;
+   justify-content: center;
+   padding-top: 300px;
+}
+
+
+
+.ikonice{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ikonice h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.ikonice p{
+    font-size: 1.3rem;
+}
+.container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+}
+.container textarea{
+    padding-right:35px;
+    margin-bottom: 50px;
+    border: 2px solid var(--details-green);
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.container input{
+    width: 510px;
+    height: 90px;
+    border: 2px solid var(--details-green);
+    border-radius: 15px;
+    font-size: 2rem;
+}
+.container textarea::placeholder{
+    font-size: 2rem;
+    padding: 10px;
+}
+.container .inputi  ::placeholder{
+    font-size: 2rem;
+    align-items: center;
+    padding-left: 30px;
+
+}
+iframe{
+    width: 1470px;
+    margin:30px;
+}
+
+
+footer{
+    background-color: var(--hd-ftr-bg);
+    color: var(--tekst);
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    height: 35vh;
+}
+footer a{
+    text-decoration: none;
+    color: var(--tekst);
+}
+footer .logo{
+    font-size: 3rem;
+    font-style: italic;
+}
+footer .aplikacije{
+    gap: 30px;
+    font-size: 3rem;
+}
+footer .navigacija{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size:1.5rem ;
+}
+footer a:hover,
+footer i:hover{
+    scale: 1.1; 
+}
+
+
+@media (max-width:768px) {
+    header{
+        flex-direction: column;
+        gap: 10px;
+        height: 15vh;
+    }
+    nav{
+        height: 20vh;
+    }
+    nav .links{
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+    }
+    main h1{
+        position: relative;
+        font-size: 3rem;
+    }
+    .search.active .btn {
+        transform: translateX(100px);
+    }
+    .search.active .inputsearch {
+        width: 100px;
+    }
+    .ikonice{
+        justify-content: center;
+        font-size: 1rem;
+        gap: 10px;
+    }
+    .ikonice img{
+        height: 80px;
+        width: 80px;
+    }
+
+    .container input{
+        width: 350px;
+    }
+    .container textarea{
+        width: 700px;
+    }
+    iframe{
+        width: 750px;
+        height: 500px;
+    }
+
+
+    footer{
+        gap: 50px;
+    }
+    
+}
+
+
+@media (max-width:526px) {
+    nav .links{
+        margin-top: 20px;
+    }
+    main h1{
+        position: relative;
+        font-size: 2rem;
+    }
+    .ikonice{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .search.active .btn {
+        transform: translateX(200px);
+    }
+    .search.active .inputsearch {
+        width: 200px;
+    }
+
+    .ikonice img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .container input{
+        width: 200px;
+    }
+    .container input::placeholder{
+        text-align: left;
+    }
+    .container textarea{
+        width: 400px;
+    }
+    iframe{
+        width: 510px;
+        height: 300px;
+    }
+
+
+
+
+
+    footer{
+        height: 60vh    ;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
